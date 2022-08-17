@@ -6,6 +6,7 @@ import sys
 class IndexView(ListView):
     template_name = 'index.html'
     model = Video
+    paginate_by = 1
     #context_object_name = 'videos'
 
 class ListVideosByCategory(ListView):
